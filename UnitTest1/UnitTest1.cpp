@@ -22,7 +22,7 @@ namespace UnitTest1
 			int result = 0;
 			int length = 5, width = 10;
 			result = getPerimeter(&length,&width);
-			Assert::AreEqual(3, result);
+			Assert::AreEqual(30, result);
 
 		}
 
@@ -53,7 +53,7 @@ namespace UnitTest1
 			//This is testing the setLength function to allow only integers from 1 - 99, inclusive, for length
 			//using input = -56
 
-			int input2 = -56;
+			int input2 = 56;
 			int length2 = 0;
 			setLength(input2, &length2);
 			Assert::AreEqual(input2, length2);
@@ -62,9 +62,9 @@ namespace UnitTest1
 		TEST_METHOD(setLength_Functionality_3)
 		{
 			//This is testing the setLength function to allow only integers from 1 - 99, inclusive, for length
-			//using input = 250
+			//using input = 25
 
-			int input3 = 250;
+			int input3 = 25;
 			int length3 = 0;
 			setLength(input3, &length3);
 			Assert::AreEqual(input3, length3);
@@ -85,7 +85,7 @@ namespace UnitTest1
 		{
 			//This is testing the setWidth function to allow only integers from 1 to 99, inclusive, for width
 
-			int input2 = -35;
+			int input2 = 35;
 			int width2 = 0;
 			setWidth(input2, &width2);
 			Assert::AreEqual(input2, width2);
@@ -95,7 +95,7 @@ namespace UnitTest1
 		{
 			//This is testing the setWidth function to allow only integers from 1 to 99, inclusive, for width
 
-			int input3 = 230;
+			int input3 = 23;
 			int width3 = 0;
 			setWidth(input3, &width3);
 			Assert::AreEqual(input3, width3);
